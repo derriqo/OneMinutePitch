@@ -82,7 +82,7 @@ As a user i want to be able to store my account credentials and their various pa
 | Signing in Option | User clicks to sign in |
 | Display login and Sign up form | Log in or Create Account |
 | Display prompt for creating a credential | Enter the site name, your username and password |
-| Display a list of credentials |  Prints a list of saved credentials |
+| Display user profile |  Logs into the account |
 | Leave Application | Sign Out of application|
 
 
