@@ -1,6 +1,5 @@
 # ONE MINUTE PITCH
 
-
 # Table of contents
 ***
 * [General Info](#General-Info)
