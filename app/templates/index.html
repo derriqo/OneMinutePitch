@@ -5,32 +5,32 @@
     {%block styles%}
     {{ super() }}
     <link href="https://fonts.googleapis.com/css?family=Purple+Purse" rel="stylesheet">
-   
-   
     {%endblock%}
 {% block content %}
 
 <div class="container">
     
     
-    </div>
+    
     <div class="jumbotron text-center" style="background-color: rgb(24, 173, 166); color: #fff; padding: 55px 25px; font-family: 'Purple Purse', cursive;">
         <h1>One Minute Pitch</h1>
     </div>
+</div>    
 <!-- pitch 2 -->
-<h3> New Pitch</h3>
-<ul>
-</ul>
-<!-- Pitch3   -->
-<h3> Startup Pitch </h3>
-<ul>
-    
-</ul>
-<!-- Pitch 4 -->
-<h3>Pick Up lines</h3>
-<ul>
-    <!-- {{ macro.displayMovieList(now_showing)}} -->
-</ul>
-
+<div class="jumbotron">
+    <h3> New Pitch</h3>
+        <ul>
+        </ul>
+    <!-- Pitch3   -->
+    <h3> Startup Pitch </h3>
+    <ul>
+        
+    </ul>
+    <!-- Pitch 4 -->
+    <h3>Pick Up lines</h3>
+    <ul>
+        <!-- {{ macro.displayMovieList(now_showing)}} -->
+    </ul>
+</div>
 
 {% endblock%}
