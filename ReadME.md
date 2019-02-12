@@ -60,8 +60,8 @@ To run this project, please follow the following instructions.
 ---
 * To run the application, in your terminal:
 
-        $ chmod +x run.py
-        $ ./run.py
+        $ chmod a+x start.sh
+        $ ./start.sh
         
 ## Testing the Application
 ---
