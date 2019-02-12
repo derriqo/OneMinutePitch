@@ -77,14 +77,14 @@ To run this project, please follow the following instructions.
 As a user i want to be able to store my account credentials and their various passwords and also  be able to delete them.
 
 | Behaviour | Input | Output |
-| :---------------- | :---------------: | ------------------: |
-| Welcomes user to the applicatin | **In terminal: $./run.py** | Hello, Welcome to Password Locker. What is your name? |
-| Display codes for navigation | **In terminal: User enters Name** | Use these short codes : cc - create a new credential, dc - display credentials, fc -find a credential, ex -exit the credential list  |
-| Display prompt for creating account | **Enter: cc** | Enter your first name, last name and password |
-| Display prompt for login in | **Enter: li** | Enter your account name and password |
+| :---------------- | :---------------: | 
+| Page Opens | One Minute Pitch Title  |
+| Landing Page | Pitches Display |
+| Signing in Option | User clicks to sign in |
+| Display login and Sign up form | Log in or Create Account |
 | Display prompt for creating a credential | **Enter: cc** | Enter the site name, your username and password |
 | Display a list of credentials | **Enter: dc** | Prints a list of saved credentials |
-| Exit application | **Enter: ex** | Exit the current navigation stage |
+| Leave Application | Sign Out of application|
 
 
 ## Support and contact details
