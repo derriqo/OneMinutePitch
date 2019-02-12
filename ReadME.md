@@ -69,7 +69,6 @@ To run this project, please follow the following instructions.
 
         $ python3.6 manage.py tes
         
-
 ## Behaviour Driven Development
 ---
 
@@ -82,8 +81,8 @@ As a user i want to be able to store my account credentials and their various pa
 | Landing Page | Pitches Display |
 | Signing in Option | User clicks to sign in |
 | Display login and Sign up form | Log in or Create Account |
-| Display prompt for creating a credential | **Enter: cc** | Enter the site name, your username and password |
-| Display a list of credentials | **Enter: dc** | Prints a list of saved credentials |
+| Display prompt for creating a credential | Enter the site name, your username and password |
+| Display a list of credentials |  Prints a list of saved credentials |
 | Leave Application | Sign Out of application|
 
 
