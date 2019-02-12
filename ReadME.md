@@ -75,7 +75,7 @@ To run this project, please follow the following instructions.
 **User Story**
 As a user i want to be able to store my account credentials and their various passwords and also  be able to delete them.
 
-| Behaviour | Input | Output |
+| Behaviour | Output |
 | :---------------- | :---------------: | 
 | Page Opens | One Minute Pitch Title  |
 | Landing Page | Pitches Display |
