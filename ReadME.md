@@ -73,7 +73,7 @@ To run this project, please follow the following instructions.
 ---
 
 **User Story**
-As a user i want to be able to store my account credentials and their various passwords and also  be able to delete them.
+As a user i want to be able to submit a one minute pitche and other users are able to vote on them and leave comments to give their feedback on them.
 
 | Behaviour | Output |
 | :---------------- | :---------------: | 
