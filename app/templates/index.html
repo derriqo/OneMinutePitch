@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+<!-- Content block -->
+    {%block styles%}
+    {{ super() }}
+    <link href="https://fonts.googleapis.com/css?family=Purple+Purse" rel="stylesheet">
+   
+   
+    {%endblock%}
+{% block content %}
+
+<div class="container">
+        <form>
+            <input type="text" name="movie_query" placeholder="Search for a Movie" class="form-control">
+            <input type="submit"  value="Submit" class="btn btn-default">
+        </form>
+    
+    </div>
+    <div class="jumbotron text-center" style="background-color: rgb(24, 173, 166); color: #fff; padding: 55px 25px; font-family: 'Purple Purse', cursive;">
+        <h1>One Minute Pitch</h1>
+    </div>
+<!-- pitch 2 -->
+<h3> New Pitch</h3>
+<ul>
+    <li></li>
+</ul>
+<!-- Pitch3   -->
+<h3> Upcoming Movies </h3>
+<ul>
+    
+</ul>
+<!-- Pitch 4 -->
+<h3>Now Showing</h3>
+<ul>
+    <!-- {{ macro.displayMovieList(now_showing)}} -->
+</ul>
+
+
+{% endblock%}
