@@ -44,6 +44,7 @@ class DevConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://derrick:@localhost/watchlist'
     DEBUG = True
 
+
 config_options = {
 'development':DevConfig,
 'production':ProdConfig,
