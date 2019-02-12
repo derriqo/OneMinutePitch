@@ -34,8 +34,6 @@ class TestConfig(Config):
     '''
     '''
 
-
-
 class DevConfig(Config):
     '''
     Development  configuration child class
