@@ -13,7 +13,7 @@
 
 ## General info
 ---
-One minute pitch an application that allows users to use that one minute wisely. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.
+As the name suggests *One minute pitch* is application that allows users to wisely use the short time they are given to say something meaningful. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.
 
 The application allows the user to:
 
