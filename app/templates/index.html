@@ -5,6 +5,7 @@
     {%block styles%}
         {{ super() }}
         <link href="https://fonts.googleapis.com/css?family=Purple+Purse" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
     {%endblock%}
     {% block content %}
 
@@ -13,13 +14,16 @@
             <div class="jumbotron text-center" style="background-color: rgb(24, 173, 166); color: #fff; padding: 55px 25px; font-family: 'Purple Purse', cursive;">
                 <h1>One Minute Pitch</h1>
             </div>
-
-            <h3> New Pitch</h3>
-        
-            <h3> Startup Pitch </h3>
-        
-            <h3>Pick Up lines</h3>
-    
+            <div class="well" style="font-family: 'Kalam', cursive;font-size:40px">
+            <p>Welcome to Pitches where you get to view your own pitch ideas</p>
+            <p>To start of, please do the following</p>
+            <ul>
+                <li>If New user ,Sign up</li>
+                <li>If Already up login</li>
+                <li>Log in to view Pitches</li>
+                <li>Click Home to go Home</li>
+            </ul>  
+            </div>   
         </div>  
 
 {% endblock%}
