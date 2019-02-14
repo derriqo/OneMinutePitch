@@ -15,7 +15,7 @@ class User(UserMixin,db.Model):
     profile_pic_path = db.Column(db.String())
     password_secure = db.Column(db.String(255))
     pass_secure = db.Column(db.String(255))
-    pitches = db.relationship('Pitch',backref ='user',lazy = 'dynamic')
+    # pitches = db.relationship('Pitch',backref ='user',lazy = 'dynamic')
 
 
     @property
@@ -51,17 +51,17 @@ class Role(db.Model):
     def __repr__(self):
         return f'User {self.name}'
 
-class Pitch(db.Model):
-    __tablename__ = 'pitches'
+# class Pitch(db.Model):
+#     __tablename__ = 'pitches'
 
-    id = db.Column(db.Integer,primary_key = True)
-    message = db.Column(db.String,)
-    name = db.Column(db.String(255))
-    user_id =db.Column(db.Integer,db.ForeignKey('users.id'))
+#     id = db.Column(db.Integer,primary_key = True)
+#     message = db.Column(db.String,)
+#     name = db.Column(db.String(255))
+#     user_id =db.Column(db.Integer,db.ForeignKey('user.id'))
 
-    def __repr__(self):
-        return f'User {self.message}'
+#     def __repr__(self):
+#         return f'User {self.message}'
 
-    def save_pitch(self):
-        db.session.add(self)
-        db.session.commit()
+#     def save_pitch(self):
+#         db.session.add(self)
+#         db.session.commit()
