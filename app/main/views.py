@@ -55,9 +55,9 @@ def update_pic(uname):
         db.session.commit()
     return redirect(url_for('main.profile',uname=uname))
 
-@main.route('/pitches',methods= ['GET','POST'])
-@login_required
-def view_pitches():
-    pitches = Pitch.query.all()
+# @main.route('/pitches',methods= ['GET','POST'])
+# @login_required
+# def view_pitches():
+#     pitches = Pitch.query.all()
     
-    return render_template('pitch.html',pitches = pitches)
+#     return render_template('pitch.html',pitches = pitches)
