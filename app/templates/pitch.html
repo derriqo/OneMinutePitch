@@ -8,11 +8,12 @@
                <input type="text">
                <input type="submit">
                <button type="submit" clmainass="btn btn-default btn-sm">
-                <a href="{{url_for('.view_pitches') }}"></a>
+                <a href="{{url_for('view_pitches') }}">view pitches</a>
               </button>
            </form>
-           {%if pitches %}
-            {for pitch in pitches}
+           <!-- {%if pitches %}
+            {for pitch in pitches} -->
+            {{ wtf.quick_form(view_pitches) }}
         </div>
         <div class="col-md-2"></div>
     </div>

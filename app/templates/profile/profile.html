@@ -1,17 +1,18 @@
 {% extends 'base.html'%}
+{% import "bootstrap/wtf.html" as wtf %}
 
 {% block content %}
 <div class="container">
   <div class="row">
        <!-- displaying  Username-->
-        <div class="col-md-4">
-          <h2> {{user.username| capitalize}} </h2>
+        <div class="col-md-4" style="font-family: 'Kalam', cursive;font-size:40px">
+          <p> {{user.username| capitalize}} </p>
 
          
         </div>
 
       <!--Display profile photo-->
-      <div class="col-md-4">
+      <div class="col-md-4" style="font-family: 'Kalam', cursive;font-size:40px">
 
         {% if user.profile_pic_path %}
           <img src="{{url_for('static',filename=user.profile_pic_path)}}" alt="" class="img-thumbnail">
@@ -20,6 +21,7 @@
         {% endif %}
 
         {% if user == current_user %}
+
         <form  action="{{url_for('main.update_pic',uname=user.username)}}" method="post" enctype = "multipart/form-data">
           <input type="file"  name="photo" class="form-control" required>
           <input type="submit">
