@@ -51,17 +51,3 @@ class Role(db.Model):
     def __repr__(self):
         return f'User {self.name}'
 
-# class Pitch(db.Model):
-#     __tablename__ = 'pitches'
-
-#     id = db.Column(db.Integer,primary_key = True)
-#     message = db.Column(db.String,)
-#     name = db.Column(db.String(255))
-#     user_id =db.Column(db.Integer,db.ForeignKey('user.id'))
-
-#     def __repr__(self):
-#         return f'User {self.message}'
-
-#     def save_pitch(self):
-#         db.session.add(self)
-#         db.session.commit()
