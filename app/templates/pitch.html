@@ -1,22 +1,16 @@
+
 {% extends 'base.html'%}
-{%block content%}
-<div class="container">
-    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-           <form action="">
-               <input type="text">
-               <input type="submit">
-               <button type="submit" clmainass="btn btn-default btn-sm">
-                <a href="{{url_for('view_pitches') }}">view pitches</a>
-              </button>
-           </form>
-           <!-- {%if pitches %}
-            {for pitch in pitches} -->
-            {{ wtf.quick_form(view_pitches) }}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+    <div class="container">
+            <div style="margin:100px;"> 
+                    <div class="col-md-12">
+            <h3>Write your Pitch</h3>
+            <hr>
+            {{ wtf.quick_form(pitch_form) }}
         </div>
-        <div class="col-md-2"></div>
-    </div>
-    {% endif%}
 </div>
-{%endblock%}
+    </div>
+
+{% endblock %}

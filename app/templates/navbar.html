@@ -16,7 +16,7 @@
             <ul class="nav navbar-nav navbar-right"style="font-family: 'Kalam', cursive;font-size:40px"> 
                 {% if current_user.is_authenticated %}
                 <li><a href="{{url_for('main.profile',uname=current_user.username)}}"><strong>Profile</strong></a></li>
-                <li><a href="{{('./pitch')}}"><strong>Pitches</strong></a></li>
+                <li><a href="{{url_for('main.new_pitch')}}"><strong>Pitches</strong></a></li>
                 <li><a href="{{url_for('auth.logout')}}"><strong>Sign out</strong></a></li>
                 {% else %}
                 <li><a href="{{url_for('auth.login')}}"><strong>Sign in</strong></a></li>

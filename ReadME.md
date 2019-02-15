@@ -52,8 +52,8 @@ To run this project, please follow the following instructions.
 ---
 * In your terminal:
         
-        $ git clone https://github.com/derriqo/One-Minute-Pitch/
-        $ cd One-Minute-Pitch
+        $ git clone https://github.com/derriqo/OneMinutePitch/
+        $ cd OneMinutePitch
 
 ## Running the Application
 ---
@@ -66,7 +66,7 @@ To run this project, please follow the following instructions.
 ---
 * To run the tests for the application file:
 
-        $ python3.6 manage.py tes
+        $ python3.6 manage.py test
         
 ## Behaviour Driven Development
 ---
@@ -77,11 +77,11 @@ As a user i want to be able to submit a one minute pitche and other users are ab
 | Behaviour | Output |
 | :---------------- | :---------------: | 
 | Page Opens | One Minute Pitch Title  |
-| Landing Page | Pitches Display |
+| Landing Page | Display app instructions |
 | Signing in Option | User clicks to sign in |
 | Display login and Sign up form | Log in or Create Account |
-| Display prompt for creating a credential | Enter the site name, your username and password |
 | Display user profile |  Logs into the account |
+| User selects pitches| Able to see select pitches |
 | Leave Application | Sign Out of application|
 
 
