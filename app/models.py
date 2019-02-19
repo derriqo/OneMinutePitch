@@ -4,35 +4,6 @@ from flask_login import UserMixin
 from . import login_manager
 from datetime import datetime
 
-# class Pitch(db.Model):
-#     __tablename__ = 'pitches'
-
-#     id = db.Column(db.Integer,primary_key = True)
-#     pitch_title = db.Column(db.String)
-#     pitch_content = db.Column(db.String(1000))
-#     posted = db.Column(db.DateTime,default=datetime.utcnow)
-#     category = db.Column(db.String)
-#     user_id = db.Column(db.Integer,db.ForeignKey("users.id"))
-#     likes = db.Column(db.Integer)
-#     dislikes = db.Column(db.Integer)
-
-
-#     def save_pitch(self):
-#         db.session.add(self)
-#         db.session.commit()
-
-#     @classmethod
-#     def get_pitches(cls,category):
-#         pitches = Pitch.query.filter_by(category=category).all()
-#         return pitches
-
-#     @classmethod
-#     def get_pitch(cls,id):
-#         pitch = Pitch.query.filter_by(id=id).first()
-
-#         return pitch
-
-    
     
 class User(UserMixin,db.Model):
     __tablename__ = 'users'
@@ -44,7 +15,7 @@ class User(UserMixin,db.Model):
     profile_pic_path = db.Column(db.String())
     password_secure = db.Column(db.String(255))
     pass_secure = db.Column(db.String(255))
-    pitches = db.relationship('Pitch',backref = 'user',lazy = "dynamic")
+    blogs = db.relationship('Blog',backref = 'user',lazy = "dynamic")
     comments = db.relationship('Comment',backref = 'user',lazy = "dynamic")
     date_joined = db.Column(db.DateTime,default=datetime.utcnow)
 
